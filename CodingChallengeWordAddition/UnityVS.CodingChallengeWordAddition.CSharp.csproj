@@ -57,6 +57,8 @@
     <Compile Include="Assets\Algorithm.cs" />
     <Compile Include="Assets\Algorithm1.cs" />
     <Compile Include="Assets\Algorithm2.cs" />
+    <Compile Include="Assets\Algorithm4.cs" />
+    <Compile Include="Assets\StateManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
