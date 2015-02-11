@@ -35,9 +35,9 @@ public class StateManager : MonoBehaviour {
         Debug.Log(possibleStates + "TN");
         possibleStates *= 8;
         Debug.Log(possibleStates + "TNXY"); // Y no longer has its own effect on the total because it is determined
-        possibleStates *= 5; //at any give time S only has 5 possible states > 4 or < 5;
+        possibleStates *= 7; //at any give time S only has 5 possible states > 4 or < 5;
         Debug.Log(possibleStates + "TNXYS");
-        possibleStates *= 3; //at any give time E only has 3 possible states 0,8,9;
+        possibleStates *= 6; //at any give time E only has 3 possible states 0,8,9;
         Debug.Log(possibleStates + "TNXYSE");
         possibleStates *= 5; //the expected 10 factorial value for this depth
         Debug.Log(possibleStates + "TNXYSEV");

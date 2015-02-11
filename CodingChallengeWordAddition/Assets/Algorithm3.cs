@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Algorithm4 : MonoBehaviour {
+public class Algorithm3 : MonoBehaviour {
     public StateManager stateManager;
 
     public int S;
@@ -47,7 +47,7 @@ public class Algorithm4 : MonoBehaviour {
             {
                 if (!available[E])
                 {
-                    //if (E == 0) { E = 7; }//if E == 0 jump passed impossible middle values; 7 not 8 so after continue it will increment to 8
+                    if (E == 0) { E = 7; }//if E == 0 jump passed impossible middle values; 7 not 8 so after continue it will increment to 8
                     continue;
                 }
                 available[E] = false;
@@ -80,12 +80,11 @@ public class Algorithm4 : MonoBehaviour {
                         available[Y] = false;
             for (S = 0; S < 10; ++S)
             {
-                if (!available[S])// || (T == 0 && S > 4) || ((T != 0 && S <= 4)))//if S > 4 T must be at least 1
+                if (!available[S] || (T == 0 && S > 4) || ((T != 0 && S <= 4)))//if S > 4 T must be at least 1
                 {
-                    /*if (T == 0 && S > 4) { S = 10; }
+                    if (T == 0 && S > 4) { S = 10; }
                     else if (T != 0 && S <= 4) { S = 4; }
-                    else*/
-								if (S != 9 && !available[S + 1]) { S++; }
+                    else if (S != 9 && !available[S + 1]) { S++; }
                     continue; 
                 }
 
