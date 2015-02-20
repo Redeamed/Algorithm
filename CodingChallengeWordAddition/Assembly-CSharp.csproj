@@ -50,6 +50,7 @@
      <Compile Include="Assets\Algorithm1.cs" />
      <Compile Include="Assets\Algorithm3.cs" />
      <Compile Include="Assets\Algorithm4.cs" />
+     <Compile Include="Assets\Algorithm5.cs" />
      <Compile Include="Assets\StateManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

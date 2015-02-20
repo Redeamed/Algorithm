@@ -30,21 +30,21 @@ public class StateManager : MonoBehaviour {
 
         //calculate possible states.
          possibleStates = 3;//T states
-        Debug.Log(possibleStates + "T");
+         Debug.Log(possibleStates + ": T");
         possibleStates *= 9;
-        Debug.Log(possibleStates + "TN");
+        Debug.Log(possibleStates + ": TN");
         possibleStates *= 8;
-        Debug.Log(possibleStates + "TNXY"); // Y no longer has its own effect on the total because it is determined
+        Debug.Log(possibleStates + ": TNXY"); // Y no longer has its own effect on the total because it is determined
         possibleStates *= 7; //at any give time S only has 5 possible states > 4 or < 5;
-        Debug.Log(possibleStates + "TNXYS");
+        Debug.Log(possibleStates + ": TNXYS");
         possibleStates *= 6; //at any give time E only has 3 possible states 0,8,9;
-        Debug.Log(possibleStates + "TNXYSE");
+        Debug.Log(possibleStates + ": TNXYSE");
         possibleStates *= 5; //the expected 10 factorial value for this depth
-        Debug.Log(possibleStates + "TNXYSEV");
+        Debug.Log(possibleStates + ": TNXYSEV");
         possibleStates *= 4; //the expected 10 factorial value for this depth
-        Debug.Log(possibleStates + "TNXYSEVI");
+        Debug.Log(possibleStates + ": TNXYSEVI");
         possibleStates *= 3; //the expected 10 factorial value for this depth
-        Debug.Log(possibleStates + "TNXYSEVIW");
+        Debug.Log(possibleStates + ": TNXYSEVIW");
 
 	}
 	
